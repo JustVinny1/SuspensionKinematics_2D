@@ -1,6 +1,14 @@
 function J = numerical_jacobian(x, dz, h, susp)
-% x = [dy; alpha]
-% Returns J = 2x2 matrix of partial derivatives of constraints w.r.t. x
+% Compute the 2x2 Jacobian of the constraint residuals using central finite differences.
+%
+% INPUTS
+%   x    - [2x1] state vector [dy; alpha] (mm, rad)
+%   dz   - scalar, prescribed vertical wheel travel (mm)
+%   h    - [2x1] finite-difference step sizes [h_dy; h_alpha] (mm, rad)
+%   susp - struct, suspension geometry (see main script for fields)
+%
+% OUTPUTS
+%   J - [2x2] Jacobian matrix, J(i,j) = df_i / dx_j
 
 dy = x(1);
 alpha = x(2);
