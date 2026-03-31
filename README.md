@@ -39,3 +39,12 @@ A Newton-Raphson iteration drives the two link-length constraint residuals to ze
 ## Units
 
 All lengths are in **millimetres**, all angles in **radians** internally (displayed in degrees on plots).
+
+## AI Usage Disclosure
+
+AI tools were used as a research and development aid in this project:
+
+- **Theory and guidance:** AI assisted with explaining mathematical concepts, suggesting implementation approaches, and debugging
+- **Code authorship:** All code was tested and validated by me. AI did not generate complete scripts or functions
+- **Comments and documentation:** AI assisted with standardising code comments across function files at to write documentation for the project.
+- **Responsibility:** I take full responsibility for the correctness, structure, and content of this project
